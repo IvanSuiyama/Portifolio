@@ -1,0 +1,35 @@
+.foto-Perfil {
+    height: 100%;
+    width: auto;
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+.foto-logo{
+    height: 80%;
+    width: auto;
+    max-width: 100%;
+}
+
+p {
+    font-family:'Times New Roman', Times, serif;
+    color: black;
+}
+
+.icones{
+padding-left: 5px;
+}
+
+.titulos{
+    text-decoration: underline;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: rgb(14, 133, 169);
+}
+
+
+.botoes{
+    text-align: center;
+    padding-left: 3%;
+}
