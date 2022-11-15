@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
    
-    <title>Meu portifolio</title>
     <!-- Css -->
     <link rel="stylesheet" href="../static/Style/estilos.css">
+
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
@@ -21,14 +21,8 @@
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/675374964f.js" crossorigin="anonymous"></script>
-    {% block head %}
-    {% endblock %}
-</head>
 
-<body>
-    
-    <!-- Barra de navegação -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+<!--     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <img class="navbar-brand" class="foto-logo" id="logo" src="../static/img/logo.jpg" alt="Logotipo">
         <h1 class="navbar-brand">Ivan Suiyama Silva</h1>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -53,10 +47,52 @@
                 </li>
             </ul>
         </div>
-    </nav>
-    {% block body %}
+    </nav> -->
+    <title>Meu portifolio</title>
+
+{% block head %}
+
+{% endblock %}
+</head>
+
+
+<body>
+    {% block body%}
+    <!-- Barra de navegação -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+               <img class="foto-logo" src="../static/img/logo-oficial-ivan.JPG" alt="logo">
+            </div>
+            
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="/Estudo" class="nav-link">Estudos</a></li>
+                    <li class="nav-item"><a href="/Projeto" class="nav-link">Projetos</a></li>
+                    <li class="nav-item"><a href="/Sobre" class="nav-link">Sobre</a></li>
+                </ul>
+            </div>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()" > <img class="icon" src="../static/img/menu_white_36dp.svg" alt=""></button>
+
+            </div>
+
+        </nav>
+     
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="/Estudo" class="nav-link">Estudos</a></li>
+                <li class="nav-item"><a href="/Projeto" class="nav-link">Projetos</a></li>
+                <li class="nav-item"><a href="/Sobre" class="nav-link">Sobre</a></li>
+            </ul>
+
+        </div>
+        
+    </header>
+    <script src="../static/Style/script.js"></script>
     <section class="jumbotron text-center">
         <div class="container">
+   
             <img class="foto-Perfil"  src="../static/img/fpf.jpg" alt="Foto Perfil">
             <h1 class="jumbotron-heading titulos">Ivan Suiyama Silva</h1>
             <p class="lead text-muted">Tecnológo em Manufatura Avançada, Cursando Tecnológo em
@@ -67,8 +103,10 @@
             </p>
             <a href="https://www.instagram.com/ivansuiyama/"><i class="fab fa-instagram"></i></a>
             <a href="https://github.com/IvanSuiyama"><i class="fab fa-github"></i></a>
+    
         </div>
     </section>
+</div>
     
     {% endblock %}
    

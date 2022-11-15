@@ -20,7 +20,7 @@ def sobre():
     return render_template('Sobre.html')
 
 
-if __name__ == "__main__":
+""" if __name__ == "__main__":
     app.run(debug=True)
-    
-    
+     """
+app.run(debug=True)
