@@ -7,7 +7,7 @@ app = Flask(__name__)
 def homepage():
     return render_template('Index.html')
 
-@app.route('/https://ivan-portifolio2-0.onrender.com/Projeto')
+@app.route('/Projeto')
 def projeto():
     return render_template('Projeto.html')
 
